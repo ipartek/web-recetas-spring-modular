@@ -19,15 +19,15 @@
        <property name="password" value="${mysql.pass}" />
     </bean> 
     
-    <bean id="daoUsuario" class="com.ipartek.formacion.nagore.repository.DAOUsuarioImpl">
+    <bean id="daoUsuario" class="com.ipartek.formacion.alberto.repository.DAOUsuarioImpl">
        <property name="dataSource" ref="mysqlDataSource"/>
     </bean>
     
-    <bean id="daoIngrediente" class="com.ipartek.formacion.nagore.repository.DAOIngredienteImpl">
+    <bean id="daoIngrediente" class="com.ipartek.formacion.alberto.repository.DAOIngredienteImpl">
        <property name="dataSource" ref="mysqlDataSource"/>
     </bean>
     
-    <bean id="daoReceta" class="com.ipartek.formacion.nagore.repository.DAORecetaImpl">
+    <bean id="daoReceta" class="com.ipartek.formacion.alberto.repository.DAORecetaImpl">
        <property name="dataSource" ref="mysqlDataSource"/>
     </bean>
 
