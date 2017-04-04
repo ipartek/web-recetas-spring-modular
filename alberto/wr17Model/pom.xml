@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ipartek.formacion.nagore</groupId>
+    <artifactId>wr17</artifactId>
+    <version>${app.version}</version>
+  </parent>
+  <artifactId>wr17Model</artifactId>
+  <name>Web Recetas Model</name>
+  <description>Modulo de web Recetas para el modelo</description>
+
+	<properties>
+		<mysql.version>5.0.8</mysql.version>
+		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
+	</properties>
+	
+	<dependencies>
+		
+		<!-- Persitencia -->					
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>	
+		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>${mysql.version}</version>
+		</dependency>
+	
+		<!-- Test para DAO -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	
+</project>
